@@ -16,11 +16,11 @@ const NavbarPure = ({ activateWallet, deactivateWallet }) => {
   const isConnected = useSelector((state) => state.connectionReducer)
 
   let navbarName = window.location.pathname.split('/').join('')
-  if (navbarName === '' || navbarName.toLowerCase() === 'staking') {
-    navbarName = 'Staking'
-  }
-  if (navbarName === 'farming') {
+  if (navbarName === '' || navbarName.toLowerCase() === 'farming') {
     navbarName = 'Farming'
+  }
+  if (navbarName === 'staking') {
+    navbarName = 'Staking'
   }
   const SideBar = () => {
     dispatch(inandout(true))
