@@ -88,11 +88,11 @@ export function withFixedStakingApi(Component) {
               { name: 'Staked amount', value: stakedAmount },
               {
                 name: 'Fee for early (before expire) unstake',
-                value: '1.55% or 1.908 ARES',
+                value: '15%',
               },
               {
                 name: 'Total yield (for entire period)',
-                value: `1.55% or ${totalYield} ARES`,
+                value: `30%`,
               },
               {
                 name: 'Locked yield (releases over time)',

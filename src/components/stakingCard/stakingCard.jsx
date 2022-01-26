@@ -449,8 +449,8 @@ function StakingCardPure({ api, APY }) {
             </div>
           </div>
           <div className={cardStakingConditionsItem}>
-            <div className={cardLabel}>Anual Compound Rate</div>
-            <div className={cardInfoText}>{APY}%</div>
+            <div className={cardLabel}>Annual Compound Rate</div>
+            <div className={cardInfoText}>3600%</div>
           </div>
           <div className={cardStakingConditionsItem}>
             <div className={cardLabel}>Duration</div>

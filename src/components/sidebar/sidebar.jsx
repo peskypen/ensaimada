@@ -7,8 +7,8 @@ import { inandout } from '../../actions/sidebarAction'
 
 export const Sidebar = () => {
   let navbarName = window.location.pathname.split('/').join('')
-  if (navbarName === '' || navbarName === 'farming') {
-    navbarName = 'Farming'
+  if (navbarName === '' || navbarName === 'staking') {
+    navbarName = 'Staking'
   }
   const dispatch = useDispatch()
   const sideBarValue = useSelector((state) => state.sideBarReducer)
