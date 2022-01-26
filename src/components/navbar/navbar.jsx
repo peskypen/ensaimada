@@ -16,11 +16,11 @@ const NavbarPure = ({ activateWallet, deactivateWallet }) => {
   const isConnected = useSelector((state) => state.connectionReducer)
 
   let navbarName = window.location.pathname.split('/').join('')
-  if (navbarName === '' || navbarName.toLowerCase() === 'farming') {
-    navbarName = 'Farming'
-  }
-  if (navbarName === 'staking') {
+  if (navbarName === '' || navbarName.toLowerCase() === 'staking') {
     navbarName = 'Staking'
+  }
+  if (navbarName === 'farming') {
+    navbarName = 'Farming'
   }
   const SideBar = () => {
     dispatch(inandout(true))
@@ -34,7 +34,7 @@ const NavbarPure = ({ activateWallet, deactivateWallet }) => {
   }, [error])
 
   useEffect(() => {
-    if (!isConnected && navbarName === 'Farming') {
+    if (!isConnected && navbarName === 'Staking') {
       history.push('/')
     }
   }, [isConnected, account])
